@@ -1,152 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades sobre a Sofia Santino</title>
-    <style>
-        /* Estilos básicos que a gente aprende no Alura */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 20px;
-            transition: 0.3s;
-        }
-
-        /* Classe para o Modo Escuro */
-        .modo-escuro {
-            background-color: #1e1e2e;
-            color: #f5f5f5;
-        }
-
-        main {
-            max-width: 700px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .modo-escuro main {
-            background-color: #2b2b3d;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #ff4b4b;
-        }
-
-        h2 {
-            color: #ff7b7b;
-            border-bottom: 2px solid #ff7b7b;
-        }
-
-        .btn-modo {
-            padding: 8px 15px;
-            background-color: #ff4b4b;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            float: right;
-        }
-
-        .botoes-like {
-            margin: 15px 0;
-        }
-
-        button {
-            padding: 8px 12px;
-            font-size: 16px;
-            cursor: pointer;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #fff;
-        }
-
-        .artigo-fonte {
-            font-size: 12px;
-            color: #777;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main>
-        <button class="btn-modo" id="botao-tema">Modo Escuro</button>
-        
-        <header>
-            <h1>Curiosidades sobre a Sofia Santino</h1>
-            <p>Por: Ingrid Fulador</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar fatos curiosos e legais sobre a Sofia Santino.</p>
+    <main class="cartao">
+        <header class="cabecalho">
+            <h1>Curiosidades sobre Sofia Santino</h1>
+            <button id="btn-tema" class="btn-tema">🌙 Modo Escuro</button>
         </header>
 
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="Foto de uma jovem sorrindo com fundo azul">
+        <section class="conteudo">
+            <p class="autor">Por: Ingrid Fulador</p>
+            <p>Boas-vindas ao meu blog! Aqui vou compartilhar fatos curiosos e legais sobre a criadora de conteúdo Sofia Santino.</p>
 
-        <div class="botoes-like">
-            <button class="btn-like">❤️ <span>0</span></button>
-            <button class="btn-like">👍 <span>0</span></button>
-        </div>
+            <img src="Sofia santino.jpeg" alt="Sofia Santino sorrindo com fundo azul" class="imagem-principal">
 
-        <h2>Carreira e reconhecimento</h2>
-        <p>Ficou conhecida inicialmente no antigo Musical.ly (hoje TikTok).</p>
-        <p>Foi a única criadora de conteúdo brasileira indicada ao Teen Choice Awards na categoria Choice Muser em 2018.</p>
-        <p>Atuou e apresentou conteúdos em programas de marcas e canais digitais, como o programa Coisa Nossa, do Guaraná Antarctica, e a Creator Week do Instagram.</p>
-        <p>Produz vídeos divertidos de maquiagem artística, desafios e vlogs que bombam muito nas redes.</p>
+            <div class="botoes-interacao">
+                <button class="btn-like">❤️ <span>0</span></button>
+                <button class="btn-like">👍 <span>0</span></button>
+            </div>
 
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500" alt="Maquiagens e pincéis">
+            <h2>Carreira e Reconhecimento</h2>
+            <p>Ficou conhecida inicialmente no antigo Musical.ly (hoje TikTok), onde se destacou pela criatividade e humor.</p>
+            <p>Foi a única criadora de conteúdo brasileira indicada ao <em>Teen Choice Awards</em> na categoria <strong>Choice Muser</strong> em 2018.</p>    
+            <p>Atuou e apresentou conteúdos em programas de marcas e canais digitais de grande porte, como o canal <em>Coisa Nossa</em> (Guaraná Antarctica) e a <em>Creator Week</em> do Instagram.</p> 
 
-        <h2>Vida pessoal e curiosidades</h2>
-        <p>Nasceu em Recife, Pernambuco, no dia 23 de outubro de 2000.</p>
-        <p>Chegou a passar no curso de Relações Internacionais na UFPE, mas desistiu para focar totalmente na produção de conteúdo para a internet.</p>
-        <p>Assumiu publicamente sua bissexualidade, gerando grande repercussão positiva e entrevistas sobre o tema.</p>
+            <h2>Vida Pessoal e Formação</h2>
+            <p>Nasceu em Recife, Pernambuco, no dia 23 de outubro de 2000.</p>
+            <p>Chegou a ser aprovada no curso de Relações Internacionais na Universidade Federal de Pernambuco (UFPE), mas optou por focar na produção de conteúdo para a internet.</p>
 
-        <h2>Talentos e hobbies</h2>
-        <p>Já fez aulas de vários instrumentos; sabe tocar saxofone e atualmente pratica bateria.</p>
-        <p>É amplamente reconhecida na internet por seus tutoriais criativos de maquiagem.</p>
-        <p>Ela é formada em um curso profissional de automaquiagem.</p>
-        <p>Praticou vôlei, jazz e coral, mas seu forte era a corrida, chegando a bater o recorde da escola a 52,9 km/h.</p>
+            <h2>Talentos e Hobbies</h2>
+            <p>Já fez aulas de vários instrumentos: sabe tocar saxofone e atualmente pratica bateria.</p>
+            <p>É amplamente reconhecida na internet por seus tutoriais criativos de maquiagem e possui curso profissional de automaquiagem.</p>
 
-        <p class="artigo-fonte">Fonte: contigo.com.br</p>
+            <footer class="rodape">
+                <p class="artigo-fonte">Fonte das informações: <a href="https://contigo.com.br" target="_blank" rel="noopener noreferrer">contigo.com.br</a></p>
+            </footer>
+        </section>
     </main>
 
-    <script>
-        // Arrumando o JS dos botões de like
-        const botoes = document.querySelectorAll(".btn-like");
-
-        botoes.forEach(function(botao) {
-            botao.addEventListener("click", function() {
-                let texto = botao.querySelector("span");
-                texto.textContent = parseInt(texto.textContent) + 1;
-            });
-        });
-
-        // Script para trocar o Modo Claro / Escuro
-        const botaoTema = document.getElementById("botao-tema");
-        const corpo = document.body;
-
-        botaoTema.addEventListener("click", function() {
-            corpo.classList.toggle("modo-escuro");
-
-            if (corpo.classList.contains("modo-escuro")) {
-                botaoTema.textContent = "Modo Claro";
-            } else {
-                botaoTema.textContent = "Modo Escuro";
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
