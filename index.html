@@ -6,45 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades sobre a Sofia Santino</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        body.dark-mode .card {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        button {
+            cursor: pointer;
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+
+        body.dark-mode button {
+            background-color: #333;
+            color: #fff;
+            border-color: #555;
+        }
+
+        .img-perfil {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-
-    <main class="cartao">
-        <header class="cabecalho">
-            <h1>Curiosidades sobre Sofia Santino</h1>
-            <button id="btn-tema" class="btn-tema">🌙 Modo Escuro</button>
+    <div class="container">
+        <header>
+            <button id="theme-toggle">🌙 Modo Escuro</button>
+            <h1>Curiosidades sobre a Sofia Santino</h1>
         </header>
 
-        <section class="conteudo">
-            <p class="autor">Por: Ingrid Fulador</p>
-            <p>Boas-vindas ao meu blog! Aqui vou compartilhar fatos curiosos e legais sobre a criadora de conteúdo Sofia Santino.</p>
-
-            <img src="Sofia santino.jpeg" alt="Sofia Santino sorrindo com fundo azul" class="imagem-principal">
-
-            <div class="botoes-interacao">
-                <button class="btn-like">❤️ <span>0</span></button>
-                <button class="btn-like">👍 <span>0</span></button>
+        <main>   
+            <div class="perfil">
+                <img class="img-perfil" src="Sofia santino.jpeg" alt="Sofia Santino posando diante de um fundo azul-claro.">
+                <h2>Curiosidades sobre a Sofia Santino</h2>
+                <p><strong>Por:</strong> Ingrid Fulador</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar fatos curiosos e legais sobre a Sofia Santino.</p>
+                
+                <div class="reacoes">
+                    <button class="btn-curtir">❤️ <span>0</span></button>
+                    <button class="btn-curtir">👍 <span>0</span></button>
+                </div>
             </div>
 
-            <h2>Carreira e Reconhecimento</h2>
-            <p>Ficou conhecida inicialmente no antigo Musical.ly (hoje TikTok), onde se destacou pela criatividade e humor.</p>
-            <p>Foi a única criadora de conteúdo brasileira indicada ao <em>Teen Choice Awards</em> na categoria <strong>Choice Muser</strong> em 2018.</p>    
-            <p>Atuou e apresentou conteúdos em programas de marcas e canais digitais de grande porte, como o canal <em>Coisa Nossa</em> (Guaraná Antarctica) e a <em>Creator Week</em> do Instagram.</p> 
+            <div class="card">
+                <h2>Carreira e reconhecimento</h2>
+                <p>Ficou conhecida inicialmente no antigo Musical.ly (hoje TikTok).</p>
+                <p>Foi a única criadora de conteúdo brasileira indicada ao Teen Choice Awards na categoria Choice Muser em 2018.</p>    
+                <p>Atuou e apresentou conteúdos em programas de marcas e canais digitais, como o programa Coisa Nossa, do Guaraná Antarctica, e a Creator Week do Instagram.</p> 
+            </div>
 
-            <h2>Vida Pessoal e Formação</h2>
-            <p>Nasceu em Recife, Pernambuco, no dia 23 de outubro de 2000.</p>
-            <p>Chegou a ser aprovada no curso de Relações Internacionais na Universidade Federal de Pernambuco (UFPE), mas optou por focar na produção de conteúdo para a internet.</p>
+            <div class="card">
+                <h2>Vida pessoal e curiosidades</h2>
+                <p>Nasceu em Recife, Pernambuco, no dia 23 de outubro de 2000.</p>
+                <p>Chegou a passar no curso de Relações Internacionais na UFPE, mas desistiu para focar totalmente na produção de conteúdo para a internet.</p>
+                <p>Assumiu publicamente sua bissexualidade, gerando grande repercussão positiva e entrevistas sobre o tema.</p>
+            </div>
 
-            <h2>Talentos e Hobbies</h2>
-            <p>Já fez aulas de vários instrumentos: sabe tocar saxofone e atualmente pratica bateria.</p>
-            <p>É amplamente reconhecida na internet por seus tutoriais criativos de maquiagem e possui curso profissional de automaquiagem.</p>
+            <div class="card">
+                <h2>Talentos e hobbies</h2>
+                <p>Já fez aulas de vários instrumentos; sabe tocar saxofone e atualmente pratica bateria.</p>
+                <p>É amplamente reconhecida na internet por seus tutoriais criativos de maquiagem.</p>
+                <p>Ela é formada em um curso profissional de automaquiagem.</p>
+                <p>Praticou vôlei, jazz e coral, mas seu forte era a corrida, chegando a bater o recorde da escola a 52,9 km/h.</p>
+            </div>
 
-            <footer class="rodape">
-                <p class="artigo-fonte">Fonte das informações: <a href="https://contigo.com.br" target="_blank" rel="noopener noreferrer">contigo.com.br</a></p>
-            </footer>
-        </section>
-    </main>
+            <p class="artigo-fonte">Fonte: contigo.com.br</p>
+        </main>
+    </div>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+        // Funcionalidade dos botões de curtir
+        const botoesCurtir = document.querySelectorAll(".btn-curtir");
+        
+        botoesCurtir.forEach(botao => {
+            botao.addEventListener("click", function() {
+                let texto = this.querySelector("span");
+                let valorAtual = parseInt(texto.textContent);
+                texto.textContent = valorAtual + 1;
+            });
+        });
+
+        // Funcionalidade do Modo Claro / Escuro
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        
+        themeToggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            
+            if (document.body.classList.contains("dark-mode")) {
+                themeToggleBtn.textContent = "☀️ Modo Claro";
+            } else {
+                themeToggleBtn.textContent = "🌙 Modo Escuro";
+            }
+        });
+    </script>
+</body> 
 </html>
